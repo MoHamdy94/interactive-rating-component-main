@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="containerOne" >
+      <!-- Rating state start -->
+  <div class="cont-content">
+     <img src="images/icon-star.svg" alt="" class="star">
+    <h2 class="head">How did we do?</h2> 
+  
+    <p class="content">
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p> 
+   
+     <div id="rating">
+      <button type="submit" class="circle" onClick="changeColor(event)">1</button>
+      <button type="submit" class="circle" onClick="changeColor(event)">2</button>
+      <button type="submit" class="circle" onClick="changeColor(event)">3</button>
+      <button type="submit" class="circle" onClick="changeColor(event)">4</button>
+      <button type="submit" class="circle" onClick="changeColor(event)">5</button>
+    </div> 
+   
+    <button type="submit" id="submit" onclick="onSubmit()">Submit</button> 
+  </div>
+  
+
+    
+      <!-- Rating state end -->
+  </div>
+  
+  <div id="containerTwo" style="display:none ;">
+    <!-- Thank you state start -->
+    <img src="images/illustration-thank-you.svg" alt="" class="thx-img">
+    
+    <span class="output">You selected  <span class="rat-out"></span>  out of 5</span>
+  
+    <h2 class="thanks">Thank you!</h2> 
+  
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!</p> 
+  
+    <!-- Thank you state end -->
+  
+  </div>
+  </div>
+
+
+  
+  <div class="attribution" >
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mohamed Hamdy</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
